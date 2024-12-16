@@ -2,7 +2,8 @@ import pandas as pd
 import sqlite3
 
 def insert_data():
-    file_name = 'C:/Users/jjpol/OneDrive/Documents/MAD/lego_final_data.xlsx'
+    #CHANGE YOUR PATH TO DATA
+    file_name = 'lego_newdata.xlsx'
     df = pd.read_excel(file_name)
 
     connection = sqlite3.connect('database.db')
